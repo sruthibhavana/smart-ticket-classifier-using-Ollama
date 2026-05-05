@@ -1,0 +1,28 @@
+[
+    {
+        "message": "My account is locked",
+        "category": "Account",
+        "priority": "Medium",
+        "confidence": 60
+    },
+    {
+        "message": "App is crashing",
+        "category": "Technical",
+        "priority": "Medium",
+        "confidence": 70
+    },
+    {
+        "message": "I want a refund",
+        "category": "Billing",
+        "priority": "High",
+        "confidence": 95
+    },
+    {
+        "ticket_id": "e6190120-fd31-467d-8ee2-4d5e3827cede",
+        "timestamp": "2026-05-05T12:58:56.958233",
+        "message": "My payment failed",
+        "category": "Billing",
+        "priority": "High",
+        "confidence": 95
+    }
+]
