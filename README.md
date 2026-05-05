@@ -1,6 +1,6 @@
 # Smart Support Ticket Classifier (Ollama) 
 
-# Note
+# Why Ollama and instructions
 Ollama was used as a local alternative due to API quota limitations, with the system designed to be easily adaptable to OpenAI
 This implementation uses Ollama for local testing without API cost.
 The same system can be easily adapted to OpenAI API by replacing the model call, as originally required in the task.
