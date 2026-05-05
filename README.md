@@ -57,13 +57,19 @@ Response:
 ```
 
 ### GET /logs
-Returns all stored ticket logs
+Returns all stored tickets with metadata (ID, timestamp, classification)
 ## Run Locally
 
 ```bash
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
+
+## Ollama Setup
+1. Install Ollama from https://ollama.com
+2. Pull the model:
+   ollama run llama3.2
+3. Ensure Ollama is running before starting the API
 
 ## Conclusion
 Used Ollama. It can be extended to use OpenAI API for improved accuracy and performance.
