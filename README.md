@@ -1,44 +1,34 @@
 # Smart Support Ticket Classifier (Ollama)
 
-## 🚀 Overview
+## Overview
 
-This project is an AI-powered system that classifies customer support tickets into categories and assigns priority levels.
+An AI-powered system that classifies customer support tickets into categories and assigns priority levels.
+This version uses a local LLM (Ollama) for cost-free and combines LLM output with rule-based logic for improved consistency.
 
-This version uses a local LLM (Ollama) instead of OpenAI for cost-free execution.
+## Features
 
----
-
-## 🧠 Features
-
-* Classifies tickets into categories (Billing, Technical, Account, General, etc.)
-* Assigns priority (Low, Medium, High)
-* Provides confidence score
-* REST API using FastAPI
+* Classifies tickets into categories such as Billing, Technical, Account, General, Complaint, and Feature Request
+* Assigns priority levels (Low, Medium, High)
+* Provides a confidence score
+* REST API built using FastAPI
 * Stores ticket logs with timestamp and unique ID
 
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 * Python
 * FastAPI
 * Ollama (Local LLM)
-* JSON storage
+* JSON (for storage)
 
----
-
-## ⚙️ How It Works
+## How It Works
 
 1. User sends a support message
-2. LLM classifies category and priority
-3. Rule-based logic improves consistency
+2. The LLM classifies category and priority
+3. Rule-based logic ensures consistent output
 4. Result is returned via API
-5. Ticket is stored for tracking
+5. Ticket is stored with metadata for tracking
 
----
-
-## 📡 API Endpoints
-
+## API Endpoints
 ### POST /classify
 
 Request:
@@ -61,23 +51,14 @@ Response:
 }
 ```
 
----
-
 ### GET /logs
-
-Returns all stored tickets
-
----
-
-## ▶️ Run Locally
+Returns all stored ticket logs
+## Run Locally
 
 ```bash
 pip install -r requirements.txt
 uvicorn app:app --reload
 ```
 
----
-
-## 💡 Note
-
-This implementation uses Ollama. It can be extended to OpenAI API for higher accuracy.
+## Conclusion
+Used Ollama. It can be extended to use OpenAI API for improved accuracy and performance.
