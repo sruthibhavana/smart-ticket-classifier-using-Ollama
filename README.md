@@ -66,9 +66,8 @@ uvicorn app:app --reload
 ```
 
 ## Ollama Setup
-1. Install Ollama from https://ollama.com
-2. Pull the model:
-   ollama run llama3.2
+1. Install Ollama 
+2. Pull the model:ollama run llama3.2
 3. Ensure Ollama is running before starting the API
 
 ## Conclusion
