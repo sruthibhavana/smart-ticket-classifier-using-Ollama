@@ -4,7 +4,13 @@
 Ollama was used as a local alternative due to API quota limitations, with the system designed to be easily adaptable to OpenAI
 This implementation uses Ollama for local testing without API cost.
 The same system can be easily adapted to OpenAI API by replacing the model call, as originally required in the task.
-Ensure Ollama is installed and running locally before starting the server.
+Ensure Ollama is installed and running locally before starting the server. 
+
+## OpenAI Integration 
+An OpenAI-based implementation is included but not executed due to billing limitations.
+To enable:
+1. Add OpenAI API key in a .env file
+2. Run the OpenAI helper instead of Ollama
 
 ## Overview
 An AI-powered system that classifies customer support tickets into categories and assigns priority levels.
