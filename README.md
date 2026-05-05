@@ -1,7 +1,7 @@
 # Smart Support Ticket Classifier (Ollama) 
 
 ## Ollama was used as a local alternative due to API quota limitations, with the system designed to be easily adaptable to OpenAI
-
+## Ensure Ollama is installed and running locally before starting the server.
 ## Overview
 
 An AI-powered system that classifies customer support tickets into categories and assigns priority levels.
